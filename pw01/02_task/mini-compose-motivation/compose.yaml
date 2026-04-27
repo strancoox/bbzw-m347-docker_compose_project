@@ -3,12 +3,12 @@ services:
     image: nginx:alpine
     container_name: motivation-web
     ports:
-      - "8080:80"
+      - "8000:80"
     volumes:
       - ./web/index.html:/usr/share/nginx/html/index.html:ro
 
   api:
-    build: .
+    build: ./api
     container_name: motivation-api
     ports:
       - "5000:5000"

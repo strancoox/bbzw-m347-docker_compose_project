@@ -1,7 +1,7 @@
 # Fragen – Mini Compose Motivation
 
-Name: <Nachname> <Vorname>  
-Klasse: <Klasse>
+Name: Stranc Aleksander  
+Klasse: INA24BL
 
 ---
 
@@ -9,21 +9,21 @@ Klasse: <Klasse>
 
 Welche Services sind in `compose.yaml` definiert?
 
-Antwort:  
+Antwort: admin, web und web
   
 
 ---
 
 Welcher Service verwendet ein fertiges Image (`image`)?
 
-Antwort:  
+Antwort: web und admin
   
 
 ---
 
 Welcher Service wird aus einem Dockerfile gebaut (`build`)?
 
-Antwort:  
+Antwort: api 
   
 
 ---
@@ -32,21 +32,21 @@ Antwort:
 
 Über welchen Host-Port ist der Web-Service **zu Beginn** erreichbar?
 
-Antwort:  
+Antwort: 8080  
   
 
 ---
 
 Welchen Port verwendet der API-Service?
 
-Antwort:  
+Antwort: 5000 
   
 
 ---
 
 Auf welchen Port haben Sie den Web-Service geändert?
 
-Antwort:  
+Antwort: 8000
   
 
 ---
@@ -55,21 +55,25 @@ Antwort:
 
 Warum ist Docker Compose in diesem Beispiel sinnvoll?
 
-Antwort:  
+Antwort: Weil man so viel schneller mehrere Services aktivieren kann 
   
 
 ---
 
 Was ist der Unterschied zwischen `image` und `build`?
 
-Antwort:  
+Antwort: 
+
+Image: Ein fertiges Image wird aus einer Quelle verwendet
+
+Build: Ein Image wird im Dockerfile erstellt
   
 
 ---
 
 Was macht der Befehl `docker compose up --build`?
 
-Antwort:  
+Antwort: Startet die Services und führt das 'build' aus 
   
 
 ---
@@ -78,28 +82,28 @@ Antwort:
 
 Startete das System beim ersten Versuch vollständig?
 
-Antwort:  
+Antwort: Nein 
   
 
 ---
 
 Welcher Service hatte ein Problem?
 
-Antwort:  
+Antwort: Der 'API' Service hatte ein Problem 
   
 
 ---
 
 Was war die Ursache für das Problem?
 
-Antwort:  
+Antwort: Der Build kontext war falsch. Der Pfad zum Dockerfile war nicht korrekt. 
   
 
 ---
 
 Wie haben Sie das Problem gelöst?
 
-Antwort:  
+Antwort: Richtigen Pfad angegeben ./api 
   
 
 ---
@@ -108,24 +112,23 @@ Antwort:
 
 Was ist der Unterschied zwischen:
 
-- `docker compose stop`  
-- `docker compose pause`  
+- `docker compose stop` stoppt die Container und Services nicht mehr erreichbar
 
-Antwort:  
+- `docker compose pause` pausiert die Services und setzt die Services in ein Timeout 
   
 
 ---
 
 Was zeigt der Befehl `docker compose logs` an?
 
-Antwort:  
+Antwort: Der Befehl zeigt die Log-Ausgaben aller Container  
   
 
 ---
 
 Was zeigt der Befehl `docker compose ps` an?
 
-Antwort:  
+Antwort: Es zeigt den Status der Container an und welche Ports verwendet werden
   
 
 ---
@@ -134,7 +137,7 @@ Antwort:
 
 Was war für Sie heute neu oder besonders wichtig?
 
-Antwort:  
+Antwort: alles
   
 
 ---
