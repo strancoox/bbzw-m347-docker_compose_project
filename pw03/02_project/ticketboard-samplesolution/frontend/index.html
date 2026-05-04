@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>TicketBoard</title>
+</head>
+<body>
+  <h1>TicketBoard</h1>
+  <p>Frontend läuft</p>
+  <button onclick="checkApi()">API prüfen</button>
+  <p id="result"></p>
+  <script>
+    async function checkApi() {
+      const result = document.getElementById("result");
+      try {
+        const response = await fetch("http://localhost:8000/health");
+        const data = await response.json();
+        result.textContent = "API Status: " + data.status;
+      } catch (error) {
+        result.textContent = "API nicht erreichbar";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -73,7 +73,7 @@ services:
   web:
     build: .
     ports:
-      - "8000:5000"
+      - "8000:5001"
 
   redis:
     image: redis:7-alpine
@@ -121,14 +121,14 @@ It makes the web application reachable from outside the container.
 
 ---
 
-#### `- "8000:5000"`
+#### `- "8000:5001"`
 
 This means:
 
 * `8000` = port on the host
-* `5000` = port inside the container
+* `5001` = port inside the container
 
-So when you open `http://localhost:8000` in the browser, the request is forwarded to port `5000` inside the `web` container.
+So when you open `http://localhost:8000` in the browser, the request is forwarded to port `5001` inside the `web` container.
 
 ---
 

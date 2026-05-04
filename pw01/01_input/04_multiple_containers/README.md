@@ -46,7 +46,7 @@ docker build -t demo-web .
 ## 4. Start the web container
 
 ```bash
-docker run -d --name web --network demo-network -p 8000:5000 demo-web
+docker run -d --name web --network demo-network -p 8000:5001 demo-web
 ```
 
 ## 5. Open in browser

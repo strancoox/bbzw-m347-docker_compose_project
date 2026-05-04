@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import redis
 
-PORT = 5000
+PORT = 5001
 r = redis.Redis(host="redis", port=6379)
 
 class Handler(BaseHTTPRequestHandler):

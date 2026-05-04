@@ -24,7 +24,7 @@ docker build -t demo-app .
 ## Run the container
 
 ```bash
-docker run -p 8000:5000 demo-app
+docker run -p 8000:5001 demo-app
 ```
 
 ## Open in browser

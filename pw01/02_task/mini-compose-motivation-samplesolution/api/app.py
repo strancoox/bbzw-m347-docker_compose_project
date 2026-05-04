@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import random
 
-PORT = 5000
+PORT = 5001
 
 QUOTES = [
     "Keep going.",

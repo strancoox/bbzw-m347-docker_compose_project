@@ -11,7 +11,7 @@ services:
     build: ./api
     container_name: motivation-api
     ports:
-      - "5000:5000"
+      - "5001:5001"
 
   admin:
     image: nginx:alpine

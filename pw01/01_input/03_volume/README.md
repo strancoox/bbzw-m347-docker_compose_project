@@ -31,7 +31,7 @@ docker build -t demo-app .
 ## 1. Run without a volume
 
 ```bash
-docker run -p 8000:5000 demo-app
+docker run -p 8000:5001 demo-app
 ```
 
 Open in browser:
@@ -59,7 +59,7 @@ mkdir -p data
 Then run:
 
 ```bash
-docker run -p 8000:5000 -v "$(pwd)/data:/data" demo-app
+docker run -p 8000:5001 -v "$(pwd)/data:/data" demo-app
 ```
 
 ### What this means
@@ -88,7 +88,7 @@ docker run -p 8000:5000 -v "$(pwd)/data:/data" demo-app
 A named volume is managed by Docker.
 
 ```bash
-docker run -p 8000:5000 -v counter_data:/data demo-app
+docker run -p 8000:5001 -v counter_data:/data demo-app
 ```
 
 ### What this means

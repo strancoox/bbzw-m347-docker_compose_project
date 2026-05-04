@@ -27,7 +27,7 @@ python3 app.py
 
 ## Open in browser
 
-[http://localhost:5000](http://localhost:5000)
+[http://localhost:5001](http://localhost:5001)
 
 ## What you should see
 

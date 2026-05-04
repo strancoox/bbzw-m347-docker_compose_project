@@ -40,7 +40,7 @@ Der Web-Service ist zu Beginn über den Port `8080` erreichbar.
 Welchen Port verwendet der API-Service?
 
 Antwort:  
-Der API-Service verwendet den Port `5000`.
+Der API-Service verwendet den Port `5001`.
 
 ---
 

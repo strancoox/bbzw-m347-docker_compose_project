@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 
-PORT = 5000
+PORT = 5001
 DATA_DIR = "/data"
 FILE = os.path.join(DATA_DIR, "counter.txt")
 
