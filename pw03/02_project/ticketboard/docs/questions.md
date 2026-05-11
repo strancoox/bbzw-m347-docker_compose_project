@@ -7,7 +7,7 @@ Klasse: <Klasse>
 
 ## 1. Konfiguration
 
-Welche Werte sind aktuell hardcoded in `compose.yml` und `app/main.py`?
+Welche Werte waren ursprünglich hardcoded in `compose.yml` und `app/main.py`?
 
 Antwort:
 

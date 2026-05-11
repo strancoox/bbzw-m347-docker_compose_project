@@ -75,9 +75,7 @@ Notieren Sie: Welche Werte sind Konfiguration und sollten in `.env`?
 
 ### 2. `.env` verwenden
 
-Eine `.env`-Datei ist bereits vorhanden. Öffnen Sie diese und prüfen Sie den Inhalt.
-
-Erweitern Sie die Datei falls nötig – sie soll alle Konfigurationswerte enthalten, die aktuell hardcoded sind.
+Eine `.env`-Datei ist noch nicht vorhanden.
 
 ---
 
