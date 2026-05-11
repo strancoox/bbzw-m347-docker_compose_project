@@ -108,7 +108,7 @@ services, ports, environment, volumes, depends_on
 
 Welche Umgebungsvariablen sind für die Datenbank-Verbindung notwendig?
 
-Antwort:
+Antwort: 
 z. B.:
 POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_HOST, POSTGRES_PORT
 

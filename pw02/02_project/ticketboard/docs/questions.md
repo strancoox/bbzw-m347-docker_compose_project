@@ -9,13 +9,21 @@ Klasse: <Klasse>
 
 Welche Services haben Sie in Ihrer `compose.yaml` definiert?
 
-Antwort:
+Antwort: 
+- `api` 
+- `db` 
+- `adminer`
+- `frontend`
 
 ---
 
 Welche Aufgabe hat jeder Service in Ihrem System?
 
-Antwort:
+Antwort: 
+- api - stellt die Schnittstelle fürs Backend bereit
+- db - speichert die Daten in Postgress Datenbank
+- adminer - nicht verstanden
+- frontend - zeigt die Ausgabe des Services im Browser
 
 ---
 
@@ -23,19 +31,19 @@ Antwort:
 
 Welchen Servicenamen verwendet die API, um die Datenbank zu erreichen?
 
-Antwort:
+Antwort: db
 
 ---
 
 Warum funktioniert `localhost` innerhalb eines Containers nicht für die Kommunikation mit anderen Services?
 
-Antwort:
+Antwort: Localhost ist nur für Lokale Container und kann nicht mit anderen Services im Netzwerk kommunizieren
 
 ---
 
 Wie stellt Docker Compose sicher, dass sich Services gegenseitig finden können?
 
-Antwort:
+Antwort: Durch ein Docker Netzwerk
 
 ---
 
@@ -48,6 +56,9 @@ Antwort:
 * Frontend
 
 Antwort:
+api - 8000
+adminer - 8000
+frontend - 3000
 
 ---
 
@@ -64,19 +75,19 @@ Antwort:
 
 Was passiert mit den Daten, wenn ein Container ohne Volume gelöscht wird?
 
-Antwort:
+Antwort: Die Daten werden nicht erhalten
 
 ---
 
 Wie haben Sie die Persistenz für die Datenbank umgesetzt?
 
-Antwort:
+Antwort: Durch ein Volume, welches in der Datenbank liegt
 
 ---
 
 Warum ist ein Volume für die Datenbank notwendig?
 
-Antwort:
+Antwort: Damit die Daten auch ohne den Contianer gespeichert werden und erhalten bleiben
 
 ---
 
@@ -84,19 +95,19 @@ Antwort:
 
 Welche Elemente haben Sie in Ihrer `compose.yaml` definiert?
 
-Antwort:
+Antwort: services, ports, images, environment, volumes, depends_on
 
 ---
 
 Welche Umgebungsvariablen sind für die Datenbank-Verbindung notwendig?
 
-Antwort:
+Antwort: ${POSTGRES_DB}, ${POSTGRES_USER}, ${POSTGRES_PASSWORD}, 
 
 ---
 
 Wofür wird `depends_on` verwendet?
 
-Antwort:
+Antwort: Damit wird die Reihenfolge, in welcher Docker die Services startet beeinflusst
 
 ---
 
@@ -104,19 +115,19 @@ Antwort:
 
 Hat das System beim ersten Start vollständig funktioniert?
 
-Antwort:
+Antwort: Nein
 
 ---
 
 Welche Probleme sind aufgetreten?
 
-Antwort:
+Antwort: Es gab keine Verbindung zur Datenbank und es gab keine Umgebungsvariablen
 
 ---
 
 Wie haben Sie diese Probleme gelöst?
 
-Antwort:
+Antwort: Durch die Änderungen in Compose file
 
 ---
 
@@ -126,7 +137,7 @@ Beschreiben Sie kurz den Datenfluss in Ihrem System.
 
 (Beispiel: Frontend → API → Datenbank)
 
-Antwort:
+Antwort: Frontend - API - Datenbank - Adminer - Datenbank
 
 ---
 
@@ -136,7 +147,7 @@ Was passiert beim Befehl:
 docker compose down
 ```
 
-Antwort:
+Antwort: Container und Netzwerke werden gestoppt und enfernt 
 
 ---
 
@@ -144,10 +155,10 @@ Antwort:
 
 Was war für Sie heute die wichtigste Erkenntnis?
 
-Antwort:
+Antwort: Der Aufbau einer compose Datei und die Funktion der Umgebungsvariablen
 
 ---
 
 Was war schwierig oder noch unklar?
 
-Antwort:
+Antwort: Es selbst zu programmieren und ohne hilfe zu lösen
